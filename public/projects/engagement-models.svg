@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" font-family="Kanit, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="0%" r="110%">
+      <stop offset="0" stop-color="#21140f"/>
+      <stop offset="0.55" stop-color="#0f0f12"/>
+      <stop offset="1" stop-color="#0c0c0c"/>
+    </radialGradient>
+    <linearGradient id="hero" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#7621B0"/>
+      <stop offset="0.6" stop-color="#B600A8"/>
+      <stop offset="1" stop-color="#BE4C00"/>
+    </linearGradient>
+    <linearGradient id="muted" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#1E1E24"/>
+      <stop offset="1" stop-color="#34343D"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="800" fill="url(#bg)"/>
+
+  <text x="70" y="100" font-size="42" font-weight="700" fill="#D7E2EA">Model comparison</text>
+  <text x="70" y="140" font-size="20" fill="#8C98A3">Macro F1 &#183; held-out test set &#183; leakage-safe features</text>
+
+  <g stroke="#23232A" stroke-width="1">
+    <line x1="90" y1="660" x2="930" y2="660"/>
+    <line x1="90" y1="553" x2="930" y2="553"/>
+    <line x1="90" y1="447" x2="930" y2="447"/>
+    <line x1="90" y1="340" x2="930" y2="340"/>
+    <line x1="90" y1="233" x2="930" y2="233"/>
+  </g>
+
+  <line x1="90" y1="391" x2="930" y2="391" stroke="#8C98A3" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="930" y="380" text-anchor="end" font-size="16" fill="#8C98A3">majority baseline 0.283</text>
+
+  <g>
+    <rect x="120" y="391" width="120" height="269" rx="22" fill="url(#muted)"/>
+    <rect x="280" y="372" width="120" height="288" rx="22" fill="url(#muted)"/>
+    <rect x="440" y="293" width="120" height="367" rx="22" fill="url(#hero)" filter="url(#glow)"/>
+    <rect x="600" y="391" width="120" height="269" rx="22" fill="url(#muted)"/>
+    <rect x="760" y="330" width="120" height="330" rx="22" fill="url(#muted)"/>
+  </g>
+
+  <g font-size="22" font-weight="700" text-anchor="middle" fill="#D7E2EA">
+    <text x="180" y="425">0.283</text>
+    <text x="340" y="406">0.304</text>
+    <text x="500" y="276">0.387</text>
+    <text x="660" y="425">0.283</text>
+    <text x="820" y="364">0.348</text>
+  </g>
+
+  <g font-size="18" text-anchor="middle" fill="#8C98A3">
+    <text x="180" y="700">Baseline</text>
+    <text x="340" y="700">Log. Reg.</text>
+    <text x="500" y="700" fill="#D7E2EA">Decision Tree</text>
+    <text x="660" y="700">Random Forest</text>
+    <text x="820" y="700">SVM</text>
+  </g>
+
+  <rect x="70" y="730" width="860" height="44" rx="22" fill="#16161A" stroke="#2A2A31"/>
+  <text x="500" y="759" text-anchor="middle" font-size="18" fill="#D7E2EA">Final approach &#8594; unsupervised K-Means profiling (K = 2)</text>
+</svg>

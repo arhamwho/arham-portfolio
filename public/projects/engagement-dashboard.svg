@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Kanit, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="20%" cy="0%" r="110%">
+      <stop offset="0" stop-color="#1d1424"/>
+      <stop offset="0.55" stop-color="#0f0f12"/>
+      <stop offset="1" stop-color="#0c0c0c"/>
+    </radialGradient>
+    <linearGradient id="purple" x1="0" x2="1">
+      <stop offset="0" stop-color="#7621B0"/>
+      <stop offset="1" stop-color="#B600A8"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1">
+      <stop offset="0" stop-color="#BE4C00"/>
+      <stop offset="1" stop-color="#FF8A3D"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <text x="70" y="105" font-size="46" font-weight="700" fill="#D7E2EA">Engagement Profiles</text>
+  <text x="70" y="148" font-size="22" fill="#8C98A3">K-Means clustering &#183; IBM HR data &#183; 1,470 employees</text>
+
+  <g transform="translate(260 370)">
+    <circle r="120" fill="none" stroke="#1E1E24" stroke-width="38"/>
+    <circle r="120" fill="none" stroke="url(#orange)" stroke-width="38" stroke-dasharray="497.6 754" transform="rotate(-90)" filter="url(#glow)"/>
+    <circle r="120" fill="none" stroke="url(#purple)" stroke-width="38" stroke-dasharray="256.4 754" stroke-dashoffset="-497.6" transform="rotate(-90)" filter="url(#glow)"/>
+    <text y="10" text-anchor="middle" font-size="64" font-weight="700" fill="#D7E2EA">2</text>
+    <text y="46" text-anchor="middle" font-size="20" fill="#8C98A3" letter-spacing="3">CLUSTERS</text>
+  </g>
+
+  <g font-size="20" fill="#D7E2EA">
+    <circle cx="86" cy="582" r="9" fill="url(#purple)"/>
+    <text x="106" y="589">Higher Pay / Longer Tenure</text>
+    <text x="440" y="589" text-anchor="end" font-weight="700">34%</text>
+    <circle cx="86" cy="628" r="9" fill="url(#orange)"/>
+    <text x="106" y="635">Lower Pay / Shorter Tenure</text>
+    <text x="440" y="635" text-anchor="end" font-weight="700">66%</text>
+  </g>
+
+  <g>
+    <rect x="70" y="690" width="170" height="140" rx="26" fill="#16161A" stroke="#2A2A31"/>
+    <text x="155" y="768" text-anchor="middle" font-size="44" font-weight="700" fill="#D7E2EA">K = 2</text>
+    <text x="155" y="804" text-anchor="middle" font-size="15" fill="#8C98A3" letter-spacing="2">CLUSTERS</text>
+
+    <rect x="256" y="690" width="170" height="140" rx="26" fill="#16161A" stroke="#2A2A31"/>
+    <text x="341" y="768" text-anchor="middle" font-size="44" font-weight="700" fill="#D7E2EA">0.175</text>
+    <text x="341" y="804" text-anchor="middle" font-size="15" fill="#8C98A3" letter-spacing="2">SILHOUETTE</text>
+  </g>
+
+  <text x="520" y="230" font-size="24" font-weight="700" fill="#D7E2EA">Cluster averages</text>
+  <text x="1130" y="230" text-anchor="end" font-size="16" fill="#8C98A3">relative to the higher value</text>
+
+  <g font-size="18">
+    <text x="520" y="290" fill="#D7E2EA">Monthly income</text>
+    <rect x="520" y="302" width="610" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="326" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="326" width="250" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="290" text-anchor="end" fill="#8C98A3">10,609 / 4,393</text>
+
+    <text x="520" y="384" fill="#D7E2EA">Years at company</text>
+    <rect x="520" y="396" width="610" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="420" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="420" width="195" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="384" text-anchor="end" fill="#8C98A3">12.8 / 4.1</text>
+
+    <text x="520" y="478" fill="#D7E2EA">Years in current role</text>
+    <rect x="520" y="490" width="610" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="514" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="514" width="195" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="478" text-anchor="end" fill="#8C98A3">7.7 / 2.5</text>
+
+    <text x="520" y="572" fill="#D7E2EA">Job level</text>
+    <rect x="520" y="584" width="610" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="608" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="608" width="305" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="572" text-anchor="end" fill="#8C98A3">3.1 / 1.5</text>
+
+    <text x="520" y="666" fill="#D7E2EA">Age</text>
+    <rect x="520" y="678" width="610" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="702" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="702" width="500" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="666" text-anchor="end" fill="#8C98A3">41.9 / 34.4</text>
+
+    <text x="520" y="760" fill="#D7E2EA">Overtime</text>
+    <rect x="520" y="772" width="610" height="16" rx="8" fill="#1C1C22"/>
+    <rect x="520" y="772" width="557" height="16" rx="8" fill="url(#purple)"/>
+    <rect x="520" y="796" width="610" height="16" rx="8" fill="url(#orange)"/>
+    <text x="1130" y="760" text-anchor="end" fill="#8C98A3">26.7% / 29.2%</text>
+  </g>
+</svg>
