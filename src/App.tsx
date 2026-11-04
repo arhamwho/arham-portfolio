@@ -28,7 +28,7 @@ function ScrollManager() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
       <ScrollManager />
       <main style={{ background: '#0C0C0C', overflowX: 'clip' }}>
         <Routes>
