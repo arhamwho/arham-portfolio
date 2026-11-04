@@ -4,10 +4,9 @@ import FadeIn from '../components/FadeIn';
 import AnimatedText from '../components/AnimatedText';
 import ContactButton from '../components/ContactButton';
 import useFitText from '../hooks/useFitText';
-import { asset } from '../lib/asset';
+import profilePhoto from '../assets/arham-2.png';
 
-// Put your photo URL (or a file in /public, e.g. '/arham.jpg') here.
-const PROFILE_PHOTO: string | null = asset('/arham-2.png');
+const PROFILE_PHOTO: string | null = profilePhoto;
 
 const BASE = 'https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7';
 

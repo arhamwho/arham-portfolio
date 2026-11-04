@@ -2,7 +2,17 @@ import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion
 import { useRef } from 'react';
 import FadeIn from './FadeIn';
 import LiveProjectButton from './LiveProjectButton';
-import { asset } from '../lib/asset';
+import gsaDashboard from '../assets/projects/gsa-dashboard.png';
+import gsaHelp from '../assets/projects/gsa-help.png';
+import gsaLanding from '../assets/projects/gsa-landing.png';
+import esportifyDashboard2 from '../assets/projects/esportify-dashboard-2.png';
+import esportifyPlayers from '../assets/projects/esportify-players.png';
+import esportifyDashboard from '../assets/projects/esportify-dashboard.png';
+import kidzoneLessons from '../assets/projects/kidzone-lessons.png';
+import kidzoneApp from '../assets/projects/kidzone-app.png';
+import engagementClusters from '../assets/projects/engagement-clusters.svg';
+import engagementModels from '../assets/projects/engagement-models.svg';
+import engagementDashboard from '../assets/projects/engagement-dashboard.svg';
 
 interface Project {
   name: string;
@@ -23,8 +33,8 @@ const PROJECTS: Project[] = [
     description:
       'Learning platform with separate student, instructor, and admin interfaces, course workflows, Firebase Auth, and role-based access.',
     github: 'https://github.com/arhamwho/Gsa',
-    col1: [asset('/projects/gsa-dashboard.png'), asset('/projects/gsa-help.png')],
-    col2: asset('/projects/gsa-landing.png'),
+    col1: [gsaDashboard, gsaHelp],
+    col2: gsaLanding,
     positions: ['left top', 'center top', 'left center'],
   },
   {
@@ -33,8 +43,8 @@ const PROJECTS: Project[] = [
     description:
       'Tournament management app for organizing esports competitions, with tournament flows and participant management.',
     github: 'https://github.com/arhamwho/Esportify',
-    col1: [asset('/projects/esportify-dashboard-2.png'), asset('/projects/esportify-players.png')],
-    col2: asset('/projects/esportify-dashboard.png'),
+    col1: [esportifyDashboard2, esportifyPlayers],
+    col2: esportifyDashboard,
     positions: ['center center', 'center 45%', 'center center'],
   },
   {
@@ -43,8 +53,8 @@ const PROJECTS: Project[] = [
     description:
       'A kid-friendly app with allowance management and activity tracking, polished mobile layouts, and simple navigation.',
     github: 'https://github.com/arhamwho/KidZone',
-    col1: [asset('/projects/kidzone-lessons.png'), asset('/projects/kidzone-lessons.png')],
-    col2: asset('/projects/kidzone-app.png'),
+    col1: [kidzoneLessons, kidzoneLessons],
+    col2: kidzoneApp,
     positions: ['left center', 'right center', 'center center'],
   },
   {
@@ -53,8 +63,8 @@ const PROJECTS: Project[] = [
     description:
       'K-Means profiling of IBM HR data into engagement segments, with leakage-safe model evaluation and a Streamlit dashboard.',
     github: 'https://github.com/arhamwho/employee-engagement-analysis',
-    col1: [asset('/projects/engagement-clusters.svg'), asset('/projects/engagement-models.svg')],
-    col2: asset('/projects/engagement-dashboard.svg'),
+    col1: [engagementClusters, engagementModels],
+    col2: engagementDashboard,
   },
 ];
 
