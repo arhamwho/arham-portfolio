@@ -2,13 +2,14 @@ import { useState, type FormEvent } from 'react';
 import { FileText, Github, MapPin, Phone } from 'lucide-react';
 import FadeIn from './FadeIn';
 import ContactButton from './ContactButton';
+import { asset } from '../lib/asset';
 
 const CONTACT_EMAIL = 'arhamwhoo@gmail.com';
 const CONTACT_PHONE = '+91 99877 24721';
 const CONTACT_PHONE_HREF = 'tel:+919987724721';
 const LOCATION = 'Mumbai, India';
 const GITHUB_URL = 'https://github.com/arhamwho';
-const RESUME_URL = '/resume.pdf';
+const RESUME_URL = asset('/resume.pdf');
 
 const BASE = 'https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7';
 
