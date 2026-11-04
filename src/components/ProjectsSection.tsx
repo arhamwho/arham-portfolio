@@ -3,9 +3,6 @@ import { useRef } from 'react';
 import FadeIn from './FadeIn';
 import LiveProjectButton from './LiveProjectButton';
 
-const img = (id: string) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1280&q=80`;
-
 interface Project {
   name: string;
   category: string;
