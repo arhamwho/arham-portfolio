@@ -40,23 +40,14 @@ const PROJECTS: Project[] = [
     positions: ['center center', 'center 45%', 'center center'],
   },
   {
-    name: 'SkillSwap AI',
-    category: 'AI-Powered Peer Learning Platform',
-    description:
-      'AI skill matching, personalized learning roadmaps, an AI Career Coach, real-time messaging, reviews, and progress tracking.',
-    col1: ['/projects/skillswap-dashboard.png', '/projects/skillswap-payments.png'],
-    col2: '/projects/skillswap-learning.png',
-    positions: ['left top', 'center center', 'center center'],
-  },
-  {
     name: 'KidZone',
     category: 'Child-Focused App',
     description:
       'A kid-friendly app with allowance management and activity tracking, polished mobile layouts, and simple navigation.',
     github: 'https://github.com/arhamwho/KidZone',
-    col1: ['/projects/kidzone-money.jpg', '/projects/kidzone-plan.jpg'],
-    col2: '/projects/kidzone-home.jpg',
-    positions: ['center center', 'center top', 'center center'],
+    col1: ['/projects/kidzone-lessons.png', '/projects/kidzone-lessons.png'],
+    col2: '/projects/kidzone-app.png',
+    positions: ['left center', 'right center', 'center center'],
   },
   {
     name: 'Employee Engagement Analysis',
@@ -66,16 +57,6 @@ const PROJECTS: Project[] = [
     github: 'https://github.com/arhamwho/employee-engagement-analysis',
     col1: ['/projects/engagement-clusters.svg', '/projects/engagement-models.svg'],
     col2: '/projects/engagement-dashboard.svg',
-  },
-  {
-    name: 'AquaPure Cloud',
-    category: 'AWS Water Treatment Platform',
-    description:
-      'Water treatment management platform deployed on AWS EC2 with Docker, NGINX, a SQL database, automation scripts, and monitoring.',
-    github: 'https://github.com/arhamwho/aquapure-cloud',
-    col1: ['/projects/aquapure-architecture.png', '/projects/aquapure-monitoring.png'],
-    col2: '/projects/aquapure-app.png',
-    positions: ['center center', 'center top', 'center center'],
   },
 ];
 
